@@ -1,0 +1,84 @@
+config:
+  partial_parse: true
+  printer_width: 120
+  send_anonymous_usage_stats: false
+  use_colors: true
+normalize:
+  outputs:
+    prod:
+      dataset: sendpulse
+      keyfile_json:
+        auth_provider_x509_cert_url: https://www.googleapis.com/oauth2/v1/certs
+        auth_uri: https://accounts.google.com/o/oauth2/auth
+        client_email: sendpulse-backend@link-179609.iam.gserviceaccount.com
+        client_id: '104210824142804523306'
+        client_x509_cert_url: https://www.googleapis.com/robot/v1/metadata/x509/sendpulse-backend%40link-179609.iam.gserviceaccount.com
+        private_key: '-----BEGIN PRIVATE KEY-----
+
+          MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCsMexNK37pYedW
+
+          /+vUBAlJXN2eZnycDHh79xITZuVM/mhuAe8D+9hdbIlYyXUp0TS9xMhCkWQOk8k3
+
+          rMR/1lU56EkahrALqQuOX1K8XjXe2++ymfky2eMkxk3F6BlfOQ4ERM09utfdu62B
+
+          dUHjJV+IjekPcrie9ildPdkP6RykkET3sfdVqAyEXDcgLxiiuNSgTIOdriBy3xfT
+
+          g63v342E+5pnzBntUgnHy3adGU9gRKKdxNyof3D26KRTPm6nD8B9t4Jr+9Hh7A53
+
+          XvWCd+CTVrjV44KpPBZ/NO8yh9oZkq+usyn0fXDJVlScj7rLJYiu63pS7s63+T9j
+
+          BQYx71H7AgMBAAECggEAA+8rIwNNspSkxEARp8+cMpMTCdwoujoD6k7Eh7nR9B0X
+
+          Ae3FDElri2rmhac74/cAiHP5YJCEkp/B/Uf1N+rps4QapI1YHVye9wFZrouh92Ts
+
+          TKgOahhii/cNIaZ5r0LISm+LUzIr93LNqXrqiQf2M4WM7L13TrtF0pqFt4bYdx8+
+
+          dhCcEgV9y6RIQJzrbrQVQe233iwigISiTRLNRWsnbG7S1/jF2ihMy5Gi3JlITp7O
+
+          FlCrDjBT+cUBCLZrlG3KmzPLzFLJPt1UUmg21n8FZTeCEIrrvj5NpBePSi0PIirv
+
+          LdIMGlNyG23uIXeD+9hpC/BO58Yqq5nZTsAtP1DXyQKBgQDT79NusvbQwGHn9Fxm
+
+          SYZCBhGUVK+qQJuNcwNvzernR6xM0YS2kiTbfmkN3T6mkxJ9KerorJZb0qPNlG3h
+
+          ndR+out/+PdMR9HM3vMkUA+3I6rMf4hp5YJhanlXGzuypNExxkqwj/5CghY6Zn6E
+
+          Yrd7s5UEODyr1eG2nr3zxOclUwKBgQDP/t64sdXJ+cvV9lURdYHLQNAh4aq5/iQr
+
+          qPqeauuEq2eCohQVI61s592C7gwqJ5Ed+N8GQCnLPSRwpZftkpdUCQO4zJWMBBVe
+
+          b9yVu51hK61vwyITdwnzUE8UMgXLQTnrJudDz3lMr6i9qtjEihDV1LZwteA0SB8k
+
+          C2cJk6kjuQKBgCzO58Tf0Y8RHaIM5/w4T0pmPhE+VmWIg1rEllVtE90SKjuTkJuJ
+
+          CoHdmBh2Tmipb59G3YOT+bYwMrGkUBcDZ4neqCvGV4KpLJJEEOP8iVYPFG1oCU9a
+
+          VtaBzGW+PEDo19HOOrxZtUgaeNigEt+qf2CH91mNCkbKUY5qwX5ogvZBAoGAfBbH
+
+          U5MtQ+mWlVj4GYlsXRGW2o/ipkIb3DxdAMQzLJyCDaqapp35al7Ohb11XnTqm+IN
+
+          VJJVHN6mbdotUNxDEiyqnsbXdYg+I3BDPsWGuCExwNq+6rP7KMFB3H+Xe1K3tjYo
+
+          hQkzie/GkRlrZ54jOx9DlOy9DRP2GDABUfJZV2kCgYB6b48svM1GJzTRKLmoecH6
+
+          bHIPnaOnL6PtoCNP8YYBFnXvUDH0iotFZzCqX0Xg1jqXWG0F2nUlDqVtlN59PFyj
+
+          51QOoT0siYutsqjSoINE7vEm5gMIAhIbe09KypKg5dYpTa/MIuoG3yyYszxLmXSi
+
+          ne82bIHpRwIWZrlCbCQlSQ==
+
+          -----END PRIVATE KEY-----
+
+          '
+        private_key_id: 1e84ccc204e606edad679c6f78e103ce80dfd077
+        project_id: link-179609
+        token_uri: https://oauth2.googleapis.com/token
+        type: service_account
+      location: EU
+      method: service-account-json
+      priority: batch
+      project: link-179609
+      retries: 1
+      threads: 32
+      type: bigquery
+  target: prod
